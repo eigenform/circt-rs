@@ -1,0 +1,3 @@
+[submodule "external/circt"]
+	path = external/circt
+	url = git@github.com:llvm/circt

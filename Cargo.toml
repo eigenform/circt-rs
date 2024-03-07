@@ -1,0 +1,16 @@
+[package]
+name = "circt-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+melior = { version = "0.16.2", features = ["llvm-trunk", "ods-dialects"], default-features = false }
+melior-macro = { version = "0.10.2", features = ["llvm-trunk"], default-features = false }
+tblgen = { version = "0.3.0", features = ["llvm-trunk"], default-features = false }
+mlir-sys = { version = "0.2.1", features = ["llvm-trunk"], default-features = false }
+
+[patch.crates-io]
+melior = { git = "https://github.com/mikeurbach/melior.git", package = "melior", branch = "mikeurbach/latest-mlir" }
+melior-macro = { git = "https://github.com/mikeurbach/melior.git", package = "melior-macro", branch = "mikeurbach/latest-mlir" }
+tblgen = { git = "https://gitlab.com/mikeurbach/tblgen-rs.git", branch = "mikeurbach/latest-mlir" }
+mlir-sys = { git = "https://github.com/mikeurbach/mlir-sys.git", branch = "mikeurbach/latest-mlir" }

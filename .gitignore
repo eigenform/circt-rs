@@ -1,0 +1,6 @@
+*~
+/.tool-versions
+/.cache
+/build/
+/install/
+/target
