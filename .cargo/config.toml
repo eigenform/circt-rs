@@ -1,0 +1,4 @@
+[env]
+MLIR_SYS_190_PREFIX = { value = "./install", relative = true, force = true }
+TABLEGEN_190_PREFIX = { value = "./install", relative = true, force = true }
+
